@@ -34,7 +34,14 @@
       </nav>
       
     <div class="text-center">
+      <h1>My Shopping List:</h1>
+      <body onload="showList()"></body>
+      <ul id="myList">
+      </ul>
       
+      <p><input type='button' class="btn btn-outline-primary btn-lg" onclick='clearStorage()' value='Clear Shopping List' /></p>
+    
+      <h1>Add Items To My Shopping List:</h1>
       Item: 
       <br>    
       <input type="text" class="btn btn-outline-primary btn-lg"id="item">
@@ -43,15 +50,15 @@
       <br> 
       <input type="text" class="btn btn-outline-primary btn-lg"id="quantity">
       <br>
-      <p><input type='button' class="btn btn-outline-primary btn-lg" onclick='changeText2()' value='Submit' /></p>
+      <p><input type='button' class="btn btn-outline-primary btn-lg" onclick='addListItem()' value='Submit' /></p>
       
-      <h1>My Shopping List:</h1>
+      <h1>Remove Items From Shopping List:</h1>
+      Item: 
+      <br>    
+      <input type="text" class="btn btn-outline-primary btn-lg"id="item">
+      <br>
+      <p><input type='button' class="btn btn-outline-primary btn-lg" onclick='removeListItem()' value="Remove" /></p>
       
-      <ul id="myList">
-      </ul>
-      <p><input type='button' class="btn btn-outline-primary btn-lg" onclick='showList()' value='ShowList' /></p>
-      <p><input type='button' class="btn btn-outline-primary btn-lg" onclick='clearStorage()' value='Clear Shopping List' /></p>
-    
       
     </div>
   </div>
