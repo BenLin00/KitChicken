@@ -4,6 +4,8 @@ const clear = document.getElementById('clear');
 const rmChck = document.getElementById('rm-chck');
 const pantryChck = document.getElementById('pantry-chck')
 const add_btn = document.getElementById('add');
+const save_btn = document.getElementById('save');
+const def_btn = document.getElementById('def');
 
 const ul_p = document.getElementById('pantry-list');
 const clearPantry = document.getElementById('clear-pantry');
@@ -20,6 +22,10 @@ const data = JSON.parse(localStorage.getItem('items'));
 let pantryArray = localStorage.getItem('pantry') ? JSON.parse(localStorage.getItem('pantry')) : [];
 localStorage.setItem('pantry', JSON.stringify(pantryArray));
 const pantry = JSON.parse(localStorage.getItem('pantry'));
+
+let savedArray = localStorage.getItem('saved') ? JSON.parse(localStorage.getItem('saved')) : [];
+localStorage.setItem('saved', JSON.stringify(savedArray));
+const saved = JSON.parse(localStorage.getItem('saved'));
 
 const liMaker = (text) => {
    const li = document.createElement('li');
@@ -38,6 +44,7 @@ add_btn.addEventListener('click', function () {
   liMaker(food.value);
   food.value = "";
 });
+
 
 data.forEach(item => {
   liMaker(item);
@@ -63,6 +70,19 @@ rmChck.addEventListener('click', function () {
         }
     }
   
+});
+
+save_btn.addEventListener('click', function(){
+  savedArray = itemsArray.slice();
+  localStorage.setItem('saved', JSON.stringify(savedArray));
+});
+
+def_btn.addEventListener('click', function(){
+  savedArray.forEach(item =>{
+    itemsArray.push(item);
+    localStorage.setItem('items', JSON.stringify(itemsArray));
+    liMaker(item);
+  });  
 });
 
 pantryChck.addEventListener('click', function () {
