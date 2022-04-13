@@ -26,7 +26,7 @@
           <a class="nav-link" href="kitchicken.html" style="font-size: 34px;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="groceries.html" style="font-size: 34px;">Groceries</a>
+          <a class="nav-link" href="groceries.html" style="font-size: 34px;">Pantry/Shopping-List</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="recipes.html" style="font-size: 34px;">Recipes</a>
@@ -48,16 +48,17 @@
         </script>
       <h1 style="font-size: 70px;">My Shopping List:</h1>
 
-      <form class="use-keyboard-input">
+      <form class>
         <input id="item" type="text" placeholder="Items and amount" style="height: 75px; width: 500px; font-size: 40px;">
       </form>
       <br>
-      <button id="add" class="btn btn-outline-primary btn-lg" style="height: 75px; width: 350px; font-size: 30px;">Add Item</button>
-
-      <button id="clear" class="btn btn-outline-primary btn-lg" style="height: 75px; width: 350px; font-size: 30px;">Clear All</button>
+      <button id="add" class="btn btn-outline-primary btn-lg" style="height: 100px; width: 250px; font-size: 30px;">Add Item</button>
+      <button id="save" class="btn btn-outline-primary btn-lg" style="height: 100px; width: 250px; font-size: 30px;">Save List</button>
+      <button id="def" class="btn btn-outline-primary btn-lg" style="height: 100px; width: 250px; font-size: 30px;">Default List</button>
       <br>
-      <button id="rm-chck" class="btn btn-outline-primary btn-lg" style="height: 75px; width: 350px; font-size: 30px;">Remove Marked</button>
-      <button id="pantry-chck" class="btn btn-outline-primary btn-lg" style="height: 75px; width: 350px; font-size: 30px;">Add Marked To Pantry</button>
+      <button id="clear" class="btn btn-outline-primary btn-lg" style="height: 100px; width: 250px; font-size: 30px;">Clear All</button>
+      <button id="rm-chck" class="btn btn-outline-primary btn-lg" style="height: 100px; width: 250px; font-size: 30px;">Remove Marked</button>
+      <button id="pantry-chck" class="btn btn-outline-primary btn-lg" style="height: 100px; width: 250px; font-size: 30px;">Add Marked To Pantry</button>
       <ul id="shopping-list" class="center"></ul>
 
     </div>
@@ -74,7 +75,7 @@
       <h1 style="font-size: 70px;">My Pantry:</h1>
       <br>
 
-      <form class="use-keyboard-input">
+      <form>
         <input id="p-item" type="text" placeholder="Add items already owned" style="height: 75px; width: 500px; font-size: 40px;">
       </form>
 
