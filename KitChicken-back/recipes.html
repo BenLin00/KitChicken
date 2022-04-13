@@ -38,17 +38,26 @@
   <body>
     <div class="text-center">
 
-      <h1>Recipes:</h1>
+      <h1>Suggested Recipes Based on Your Pantry:</h1>
       
       <div class="text-center">
           
-          <p><input type='button' class="btn btn-outline-primary btn-lg" style="height: 100px; width: 600px; font-size: 60px;" onclick="window.location.href='chickenparm.html'" value='Chicken Parmesan' /></p>
+          <p><input type='button' class="btn btn-outline-primary btn-lg filterdiv minHour" style="height: 100px; width: 600px; font-size: 60px;" onclick="window.location.href='chickenparm.html'" value='Chicken Parmesan' /></p>
           <p><input type='button' class="btn btn-outline-primary btn-lg" style="height: 100px; width: 600px; font-size: 60px;"onclick="window.location.href='chickenmarsala.html'" value='Chicken Marsala'/></p>
           <p><input type='button' class="btn btn-outline-primary btn-lg" style="height: 100px; width: 600px; font-size: 60px;"onclick="window.location.href='chickennoodlesoup.html'" value='Chicken Noodle Soup'/></p>
           <p><input type='button' class="btn btn-outline-primary btn-lg" style="height: 100px; width: 600px; font-size: 60px;"onclick="window.location.href='mushroomravioli.html'" value='Mushroom Ravioli'/></p>
     
-  
+          <h2>Filter By:</h2>
       </div>
+      </div>
+
+      <div id="myBtnContainer">
+        <button class="btn btn-outline-primary btn-lg" onclick="window.location.href='recipes.html'"> Show all</button>
+        <button class="btn btn-outline-primary btn-lg" onclick="window.location.href='noRecipesMatch.html'"> Vegan</button>
+        <button class="btn btn-outline-primary btn-lg" onclick="window.location.href='recipesVegetarian.html'"> Vegetarian</button>
+        <button class="btn btn-outline-primary btn-lg" onclick="window.location.href='noRecipesMatch.html'"> Gluten Free</button>
+        <button class="btn btn-outline-primary btn-lg" onclick="window.location.href='noRecipesMatch.html'"> 30 min or less</button>
+        <button class="btn btn-outline-primary btn-lg" onclick="window.location.href='recipesHour.html'"> 1 hr or less</button>
       </div>
   </body>
   </div>
