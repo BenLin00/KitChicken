@@ -1,6 +1,4 @@
-function msg(){  
-     
-   }  
+
 function addListItem() { 
     
    var data = JSON.parse(localStorage.getItem("shoppingList"));
