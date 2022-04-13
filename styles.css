@@ -62,3 +62,7 @@
       flex-direction: column;
     }
   }
+  /* List style*/
+  ul {
+    list-style-type: none;
+   }
